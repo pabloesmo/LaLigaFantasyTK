@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/LaLigaFantasyTK/static/css/main.e52cfa32.css",
+    "main.js": "/LaLigaFantasyTK/static/js/main.07e2fc8d.js",
+    "static/js/453.670e15c7.chunk.js": "/LaLigaFantasyTK/static/js/453.670e15c7.chunk.js",
+    "static/media/campo.png": "/LaLigaFantasyTK/static/media/campo.3d568a115d40056529c9.png",
+    "index.html": "/LaLigaFantasyTK/index.html",
+    "main.e52cfa32.css.map": "/LaLigaFantasyTK/static/css/main.e52cfa32.css.map",
+    "main.07e2fc8d.js.map": "/LaLigaFantasyTK/static/js/main.07e2fc8d.js.map",
+    "453.670e15c7.chunk.js.map": "/LaLigaFantasyTK/static/js/453.670e15c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e52cfa32.css",
+    "static/js/main.07e2fc8d.js"
+  ]
+}
