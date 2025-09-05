@@ -57,7 +57,7 @@ function App() {
   const player2 = { name: "Mbappé", marketValue: 160, image: ""};
 
   useEffect(() => {
-    fetch("http://localhost:8000/goleadores") // tu backend
+    fetch("https://back-lf-swgm.onrender.com/goleadores") // tu backend
       .then((res) => res.json())
       .then((data) => {
         setScorers(data);

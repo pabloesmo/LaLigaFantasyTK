@@ -11,7 +11,7 @@ const PlayerCard = ({ firstName, lastName }) => {
         if(lastName) {
           params.apellido = lastName;
         }
-        const res = await axios.get("http://localhost:8000/jugador-imagen", {
+        const res = await axios.get("https://back-lf-swgm.onrender.com/jugador-imagen", {
           params: { nombre: firstName, apellido: lastName },
         });
         setImageUrl(res.data.image_url);

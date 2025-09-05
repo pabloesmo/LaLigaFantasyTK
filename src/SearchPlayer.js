@@ -8,7 +8,7 @@ function SearchPlayer() {
   const handleSearch = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http://127.0.0.1:8000/jugadores?nombre=${searchTerm}`);
+      const response = await fetch(`https://back-lf-swgm.onrender.com/jugadores?nombre=${searchTerm}`);
       if (response.ok) {
         const data = await response.json();
         setPlayers(data);
