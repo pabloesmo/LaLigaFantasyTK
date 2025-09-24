@@ -52,6 +52,7 @@ function App() {
 
   const [scorers, setScorers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [grafica, setGrafica] = useState();
   
   const player1 = { name: "Lamine Yamal", marketValue: 120, image: ""};
   const player2 = { name: "Mbappé", marketValue: 160, image: ""};
@@ -65,6 +66,19 @@ function App() {
       })
       .catch((err) => {
         console.error("Error al obtener goleadores:", err);
+        setLoading(false);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch("https://back-lf-swgm.onrender.com/grafica-mercado-jugador") // tu backend
+      .then((res) => res.json())
+      .then((data) => {
+        setGrafica(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error al obtener gráfica de mercado:", err);
         setLoading(false);
       });
   }, []);
@@ -180,6 +194,13 @@ function App() {
       <div className="sidebar">
         <h2 style={{ textAlign: "center" }}>Comparación de Mercado</h2>
           <PlayerComparison player1={player1} player2={player2} />
+      </div>
+
+      <div className="sidebar">
+        <h2 style={{ textAlign: "center" }}>Gráfica mercado/jugador</h2>
+          <td>
+            
+          </td>
       </div>
     </div>
   );
